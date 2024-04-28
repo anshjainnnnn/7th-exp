@@ -1,0 +1,20 @@
+HTML :-
+From php
+COPY ./ansh.php ./
+EXPOSE 3000
+CMD ["php","S",0.0.0.0.:30000"]
+
+php:-
+<html>
+    <?php echo "Hello world"?>
+<html>
+
+
+cammands:- 
+docker version
+cd Desktop
+cd FinalExp7
+docker build -t prapti2020/second.php -f "C:\Users\Prapti Sinha\Desktop\FinalExp7\first.dockerfile" .
+docker tag prapti2020/second.php prapti2020/second.php:latest
+docker login
+docker push prapti2020/second.php:latest
